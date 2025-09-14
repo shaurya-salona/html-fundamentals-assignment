@@ -1,146 +1,112 @@
-# HTML Fundamentals Assignment
+# HTML & CSS Comprehensive Assignment
 
-This repository contains the complete HTML fundamentals assignment with three comprehensive web pages demonstrating semantic HTML5, forms, and tables.
+This repository contains two comprehensive web development projects demonstrating modern HTML5 and CSS3 techniques.
 
 ## 📁 Project Structure
 
 ```
-html-fundamentals-assignment/
-├── question1/
-│   ├── index.html          # Personal Portfolio Website
-│   └── favicon.ico         # Website favicon
-├── question2/
-│   └── registration.html   # Course Registration Form
-├── question3/
-│   └── students.html       # Student Management Dashboard
-├── screenshots/            # Screenshots of each webpage
-└── README.md              # This file
+html-css-comprehensive-assignment/
+├── README.md                           # This file
+├── PROJECT_SUMMARY.md                  # Detailed project summary
+├── question1-innovatetech/             # InnovateTech Solutions Website
+│   ├── index.html                      # Homepage
+│   ├── about.html                      # About page
+│   ├── contact.html                    # Contact page with advanced form
+│   ├── css/
+│   │   └── styles.css                  # Comprehensive CSS with Grid & Flexbox
+│   └── images/
+│       ├── favicon.ico                 # Website favicon
+│       ├── logo.png                    # Company logo
+│       ├── hero-image.jpg              # Hero section image
+│       └── team-photos/                # Team member photos
+│           ├── ceo.jpg
+│           ├── cto.jpg
+│           ├── lead-designer.jpg
+│           ├── lead-developer.jpg
+│           ├── project-manager.jpg
+│           └── cloud-architect.jpg
+├── question2-dashboard/                # Admin Dashboard Application
+│   ├── dashboard.html                  # Complete dashboard interface
+│   ├── css/
+│   │   └── dashboard.css               # Advanced dashboard CSS
+│   ├── images/
+│   │   ├── favicon.ico                 # Dashboard favicon
+│   │   └── user-avatar.png             # User profile image
+│   └── README.md                       # Dashboard documentation
+└── screenshots/                        # Project screenshots
+    ├── question1-desktop.png           # Homepage desktop view
+    ├── question1-about-desktop.png     # About page desktop view
+    ├── question1-contact-desktop.png   # Contact page desktop view
+    └── question2-desktop.png           # Dashboard desktop view
 ```
 
-## 🎯 Assignment Questions Completed
+## Question 1: InnovateTech Solutions Website
 
-### Question 1: Personal Portfolio Website
-**File:** `question1/index.html`
+A modern, responsive website for a fictional tech company showcasing:
 
-**Features:**
-- ✅ Complete HTML5 boilerplate with semantic structure
-- ✅ Proper semantic HTML5 elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
-- ✅ Navigation menu with 4 links (Home, About, Projects, Contact)
-- ✅ Hero section with developer name and tagline
-- ✅ About section with professional photo and bio
-- ✅ Skills list using appropriate list elements
-- ✅ Projects section with 3 project entries
-- ✅ Education section with academic qualifications
-- ✅ Footer with copyright and social media links
-- ✅ Proper heading hierarchy (one `<h1>`, proper `<h2>`, `<h3>` order)
-- ✅ All images have descriptive alt text
-- ✅ Favicon implementation
-- ✅ HTML entities for copyright symbol
-- ✅ Accessibility features (aria-labels, semantic navigation)
+- **Semantic HTML5** structure with proper accessibility
+- **CSS Grid and Flexbox** for modern layouts
+- **Responsive design** with mobile-first approach
+- **Advanced forms** with proper validation
+- **Modern CSS techniques** including custom properties
 
-### Question 2: Course Registration Form
-**File:** `question2/registration.html`
+### Features:
+- Homepage with hero section, services, and company preview
+- About page with company history, team, and values
+- Contact page with advanced form and company information
+- Fully responsive design (mobile, tablet, desktop)
+- Accessible markup with proper ARIA labels
 
-**Features:**
-- ✅ Complete HTML5 boilerplate
-- ✅ Form with POST method and action="/submit-registration"
-- ✅ Personal Information section with required fields
-- ✅ Academic Background section with dropdown and number inputs
-- ✅ Course Preferences with radio buttons and checkboxes
-- ✅ Additional Information with range slider and textarea
-- ✅ Terms and Conditions with required checkbox
-- ✅ All form inputs have proper labels with `for` attributes
-- ✅ HTML5 input types for validation (email, tel, date, file, number, range)
-- ✅ Required attributes for mandatory fields
-- ✅ Grouped fields using `<fieldset>` and `<legend>`
-- ✅ Submit and Reset buttons
-- ✅ Placeholder text and help text
-- ✅ JavaScript enhancements for form validation
-- ✅ Accessibility features (aria-describedby, fieldset legends)
+## Question 2: Interactive Dashboard Application
 
-### Question 3: Student Management Dashboard
-**File:** `question3/students.html`
+A responsive admin dashboard demonstrating:
 
-**Features:**
-- ✅ Complete HTML5 boilerplate with semantic structure
-- ✅ Table with proper elements (`<table>`, `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`, `<th>`, `<td>`)
-- ✅ Table caption: "Computer Science Students - Batch 2024"
-- ✅ Complex table headers with colspan and rowspan
-- ✅ 6 realistic student records with diverse data
-- ✅ Rowspan for students taking multiple courses
-- ✅ Colspan for summary rows
-- ✅ Table footer with statistics
-- ✅ Scope attributes for header cells
-- ✅ Summary section with semantic elements
-- ✅ Accessibility features (role="table", aria-label)
-- ✅ Additional sections for academic summary and quick actions
+- **Advanced CSS Grid** for complex layouts
+- **Interactive elements** with CSS-only solutions
+- **Data tables** with sorting and filtering styles
+- **Form management** with multiple fieldsets
+- **Modern CSS features** including custom properties
 
-## 🚀 Technical Requirements Met
+### Features:
+- Sidebar navigation with user profile
+- Statistics cards with metrics
+- Data tables for orders and analytics
+- Quick actions form for product management
+- Responsive design with collapsible sidebar
 
-### HTML5 Semantic Structure
-- All pages use proper semantic HTML5 elements
-- Correct document structure with `<head>`, `<body>`, and semantic sections
-- Proper meta tags for SEO and accessibility
-- Viewport meta tag for responsive design
+## Technologies Used
 
-### Accessibility Features
-- Descriptive alt text for all images
-- Proper heading hierarchy maintained
-- Semantic navigation with aria-labels
-- Form labels properly associated with inputs
-- Table headers with scope attributes
-- ARIA attributes for enhanced accessibility
+- **HTML5**: Semantic markup, forms, accessibility
+- **CSS3**: Grid, Flexbox, custom properties, responsive design
+- **Modern CSS**: CSS variables, calc(), clamp(), advanced selectors
 
-### Form Validation
-- HTML5 input types for client-side validation
-- Required attributes for mandatory fields
-- Email format validation
-- File type restrictions for image uploads
-- Number range restrictions
-- Pattern validation for phone numbers
+## Browser Compatibility
 
-### Table Features
-- Complex table structure with multiple header rows
-- Colspan and rowspan for merged cells
-- Table caption and summary
-- Proper table footer with statistics
-- Accessible table markup
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-## 📸 Screenshots
+## Getting Started
 
-Screenshots of each webpage should be placed in the `screenshots/` directory:
-- `question1-screenshot.png` - Portfolio website
-- `question2-screenshot.png` - Registration form
-- `question3-screenshot.png` - Student dashboard
+1. Clone the repository
+2. Open any HTML file in a modern web browser
+3. Test responsive design by resizing the browser window
+4. Check accessibility with browser developer tools
 
-## 🔍 Validation
+## Learning Objectives Demonstrated
 
-All HTML files have been checked for:
-- ✅ Proper HTML5 syntax
-- ✅ Semantic structure
-- ✅ Accessibility compliance
-- ✅ Form validation attributes
-- ✅ Table accessibility features
-
-## 📝 Notes
-
-- All placeholder images and links are included for demonstration purposes
-- The favicon.ico is a placeholder file
-- Form action points to "/submit-registration" as specified
-- All student data is fictional and for demonstration only
-- JavaScript enhancements are included for better user experience
-
-## 🎓 Learning Objectives Achieved
-
-This assignment demonstrates proficiency in:
-- Creating well-structured HTML documents
-- Using semantic HTML5 elements effectively
-- Building accessible forms with various input types
-- Creating properly structured tables for data presentation
-- Implementing best practices for web accessibility and SEO
+✅ Semantic, accessible HTML5 documents
+✅ CSS best practices with external stylesheets
+✅ CSS selectors, specificity, and box model
+✅ Modern layout techniques (Flexbox and Grid)
+✅ Positioning for overlays and interactive elements
+✅ Responsive, mobile-friendly interfaces
+✅ Forms with proper validation and accessibility
 
 ---
 
-**Author:** Shaurya Salona  
-**Date:** January 2025  
-**Course:** HTML Fundamentals Assignment
+**Assignment completed by:** [Your Name]
+**Date:** [Current Date]
+**Course:** HTML & CSS Comprehensive Assignment
+

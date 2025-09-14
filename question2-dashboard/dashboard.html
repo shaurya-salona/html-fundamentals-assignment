@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin Dashboard - Manage your business operations with comprehensive analytics and tools">
+    <meta name="keywords" content="admin dashboard, analytics, business management, data visualization">
+    <meta name="author" content="Admin Dashboard">
+    <title>Admin Dashboard - Business Management</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <!-- Dashboard Layout Container -->
+    <div class="dashboard-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" role="navigation" aria-label="Main navigation">
+            <div class="sidebar-header">
+                <div class="dashboard-logo">
+                    <span class="logo-icon" aria-hidden="true">📊</span>
+                    <span class="logo-text">Dashboard</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#dashboard" class="nav-link active" aria-current="page">
+                            <span class="nav-icon" aria-hidden="true">🏠</span>
+                            <span class="nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#analytics" class="nav-link">
+                            <span class="nav-icon" aria-hidden="true">📈</span>
+                            <span class="nav-text">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#orders" class="nav-link">
+                            <span class="nav-icon" aria-hidden="true">📦</span>
+                            <span class="nav-text">Orders</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">
+                            <span class="nav-icon" aria-hidden="true">🛍️</span>
+                            <span class="nav-text">Products</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#customers" class="nav-link">
+                            <span class="nav-icon" aria-hidden="true">👥</span>
+                            <span class="nav-text">Customers</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#inventory" class="nav-link">
+                            <span class="nav-icon" aria-hidden="true">📋</span>
+                            <span class="nav-text">Inventory</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reports" class="nav-link">
+                            <span class="nav-icon" aria-hidden="true">📊</span>
+                            <span class="nav-text">Reports</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings" class="nav-link">
+                            <span class="nav-icon" aria-hidden="true">⚙️</span>
+                            <span class="nav-text">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <img src="images/user-avatar.png" alt="User Avatar" class="avatar-img">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name">John Doe</div>
+                        <div class="user-role">Administrator</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard Area -->
+        <main class="main-dashboard">
+            <!-- Header Bar -->
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <h1 class="page-title">Dashboard Overview</h1>
+                </div>
+                
+                <div class="header-right">
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search..." class="search-input" aria-label="Search">
+                        <span class="search-icon" aria-hidden="true">🔍</span>
+                    </div>
+                    
+                    <div class="notifications">
+                        <button class="notification-btn" aria-label="Notifications">
+                            <span class="notification-icon" aria-hidden="true">🔔</span>
+                            <span class="notification-badge">3</span>
+                        </button>
+                    </div>
+                    
+                    <div class="user-dropdown">
+                        <button class="user-dropdown-btn" aria-label="User menu">
+                            <img src="images/user-avatar.png" alt="User Avatar" class="user-avatar-small">
+                            <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Statistics Cards Section -->
+                <section class="stats-section" aria-labelledby="stats-heading">
+                    <h2 id="stats-heading" class="section-title">Key Metrics</h2>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card revenue">
+                            <div class="stat-icon">
+                                <span class="icon" aria-hidden="true">💰</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">$125,430</div>
+                                <div class="stat-label">Total Revenue</div>
+                                <div class="stat-change positive">
+                                    <span class="change-icon" aria-hidden="true">↗</span>
+                                    <span class="change-text">+12.5%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card users">
+                            <div class="stat-icon">
+                                <span class="icon" aria-hidden="true">👥</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">2,847</div>
+                                <div class="stat-label">Active Users</div>
+                                <div class="stat-change positive">
+                                    <span class="change-icon" aria-hidden="true">↗</span>
+                                    <span class="change-text">+8.2%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card orders">
+                            <div class="stat-icon">
+                                <span class="icon" aria-hidden="true">📦</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">1,429</div>
+                                <div class="stat-label">Orders</div>
+                                <div class="stat-change negative">
+                                    <span class="change-icon" aria-hidden="true">↘</span>
+                                    <span class="change-text">-3.1%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stat-card growth">
+                            <div class="stat-icon">
+                                <span class="icon" aria-hidden="true">📈</span>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">24.8%</div>
+                                <div class="stat-label">Growth Rate</div>
+                                <div class="stat-change positive">
+                                    <span class="change-icon" aria-hidden="true">↗</span>
+                                    <span class="change-text">+5.7%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Data Tables Section -->
+                <section class="tables-section" aria-labelledby="tables-heading">
+                    <h2 id="tables-heading" class="section-title">Recent Activity</h2>
+                    
+                    <div class="tables-grid">
+                        <!-- Recent Orders Table -->
+                        <div class="table-container">
+                            <div class="table-header">
+                                <h3 class="table-title">Recent Orders</h3>
+                                <button class="table-action-btn">View All</button>
+                            </div>
+                            
+                            <div class="table-wrapper">
+                                <table class="data-table" role="table">
+                                    <thead>
+                                        <tr role="row">
+                                            <th role="columnheader" class="sortable">
+                                                Order ID
+                                                <span class="sort-icon" aria-hidden="true">↕</span>
+                                            </th>
+                                            <th role="columnheader" class="sortable">
+                                                Customer
+                                                <span class="sort-icon" aria-hidden="true">↕</span>
+                                            </th>
+                                            <th role="columnheader" class="sortable">
+                                                Product
+                                                <span class="sort-icon" aria-hidden="true">↕</span>
+                                            </th>
+                                            <th role="columnheader" class="sortable">
+                                                Amount
+                                                <span class="sort-icon" aria-hidden="true">↕</span>
+                                            </th>
+                                            <th role="columnheader" class="sortable">
+                                                Status
+                                                <span class="sort-icon" aria-hidden="true">↕</span>
+                                            </th>
+                                            <th role="columnheader" class="sortable">
+                                                Date
+                                                <span class="sort-icon" aria-hidden="true">↕</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr role="row">
+                                            <td role="cell">#ORD-001</td>
+                                            <td role="cell">Alice Johnson</td>
+                                            <td role="cell">Premium Package</td>
+                                            <td role="cell">$299.99</td>
+                                            <td role="cell">
+                                                <span class="status-badge completed">Completed</span>
+                                            </td>
+                                            <td role="cell">2024-01-15</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">#ORD-002</td>
+                                            <td role="cell">Bob Smith</td>
+                                            <td role="cell">Basic Plan</td>
+                                            <td role="cell">$99.99</td>
+                                            <td role="cell">
+                                                <span class="status-badge pending">Pending</span>
+                                            </td>
+                                            <td role="cell">2024-01-14</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">#ORD-003</td>
+                                            <td role="cell">Carol Davis</td>
+                                            <td role="cell">Enterprise Suite</td>
+                                            <td role="cell">$599.99</td>
+                                            <td role="cell">
+                                                <span class="status-badge processing">Processing</span>
+                                            </td>
+                                            <td role="cell">2024-01-13</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">#ORD-004</td>
+                                            <td role="cell">David Wilson</td>
+                                            <td role="cell">Standard Package</td>
+                                            <td role="cell">$199.99</td>
+                                            <td role="cell">
+                                                <span class="status-badge completed">Completed</span>
+                                            </td>
+                                            <td role="cell">2024-01-12</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">#ORD-005</td>
+                                            <td role="cell">Eva Brown</td>
+                                            <td role="cell">Premium Package</td>
+                                            <td role="cell">$299.99</td>
+                                            <td role="cell">
+                                                <span class="status-badge cancelled">Cancelled</span>
+                                            </td>
+                                            <td role="cell">2024-01-11</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">#ORD-006</td>
+                                            <td role="cell">Frank Miller</td>
+                                            <td role="cell">Basic Plan</td>
+                                            <td role="cell">$99.99</td>
+                                            <td role="cell">
+                                                <span class="status-badge pending">Pending</span>
+                                            </td>
+                                            <td role="cell">2024-01-10</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">#ORD-007</td>
+                                            <td role="cell">Grace Lee</td>
+                                            <td role="cell">Enterprise Suite</td>
+                                            <td role="cell">$599.99</td>
+                                            <td role="cell">
+                                                <span class="status-badge processing">Processing</span>
+                                            </td>
+                                            <td role="cell">2024-01-09</td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell">#ORD-008</td>
+                                            <td role="cell">Henry Taylor</td>
+                                            <td role="cell">Standard Package</td>
+                                            <td role="cell">$199.99</td>
+                                            <td role="cell">
+                                                <span class="status-badge completed">Completed</span>
+                                            </td>
+                                            <td role="cell">2024-01-08</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="6" class="table-summary">
+                                                Total: 8 orders | Revenue: $2,299.92
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- User Analytics Table -->
+                        <div class="table-container">
+                            <div class="table-header">
+                                <h3 class="table-title">User Analytics</h3>
+                                <button class="table-action-btn">Export</button>
+                            </div>
+                            
+                            <div class="table-wrapper">
+                                <table class="data-table" role="table">
+                                    <thead>
+                                        <tr role="row">
+                                            <th role="columnheader" colspan="2">User Type</th>
+                                            <th role="columnheader">Count</th>
+                                            <th role="columnheader">Percentage</th>
+                                            <th role="columnheader">Trend</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr role="row">
+                                            <td role="cell" colspan="2" class="category-header">Premium Users</td>
+                                            <td role="cell">1,247</td>
+                                            <td role="cell">43.8%</td>
+                                            <td role="cell">
+                                                <span class="trend-indicator positive">↗ +5.2%</span>
+                                            </td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell" colspan="2" class="category-header">Standard Users</td>
+                                            <td role="cell">987</td>
+                                            <td role="cell">34.7%</td>
+                                            <td role="cell">
+                                                <span class="trend-indicator positive">↗ +2.1%</span>
+                                            </td>
+                                        </tr>
+                                        <tr role="row">
+                                            <td role="cell" colspan="2" class="category-header">Basic Users</td>
+                                            <td role="cell">613</td>
+                                            <td role="cell">21.5%</td>
+                                            <td role="cell">
+                                                <span class="trend-indicator negative">↘ -1.8%</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2" class="summary-label">Total Users</td>
+                                            <td class="summary-value">2,847</td>
+                                            <td class="summary-value">100%</td>
+                                            <td class="summary-value">
+                                                <span class="trend-indicator positive">↗ +3.2%</span>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Quick Actions Section -->
+                <section class="quick-actions-section" aria-labelledby="actions-heading">
+                    <h2 id="actions-heading" class="section-title">Quick Actions</h2>
+                    
+                    <div class="actions-container">
+                        <div class="action-form-container">
+                            <h3 class="form-title">Add New Product</h3>
+                            
+                            <form class="product-form" action="#" method="post" novalidate>
+                                <!-- Product Information Fieldset -->
+                                <fieldset class="form-fieldset">
+                                    <legend class="fieldset-legend">Product Information</legend>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="product-name" class="form-label">
+                                                Product Name <span class="required" aria-label="required">*</span>
+                                            </label>
+                                            <input type="text" id="product-name" name="product-name" class="form-input" required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="product-category" class="form-label">Category</label>
+                                            <select id="product-category" name="product-category" class="form-select">
+                                                <option value="">Select Category</option>
+                                                <option value="electronics">Electronics</option>
+                                                <option value="clothing">Clothing</option>
+                                                <option value="books">Books</option>
+                                                <option value="home">Home & Garden</option>
+                                                <option value="sports">Sports</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="product-price" class="form-label">Price</label>
+                                            <input type="number" id="product-price" name="product-price" class="form-input" 
+                                                   min="0" step="0.01" placeholder="0.00">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="product-sku" class="form-label">SKU/Code</label>
+                                            <input type="text" id="product-sku" name="product-sku" class="form-input" 
+                                                   pattern="[A-Z0-9-]+" placeholder="ABC-123">
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Inventory Fieldset -->
+                                <fieldset class="form-fieldset">
+                                    <legend class="fieldset-legend">Inventory</legend>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="stock-quantity" class="form-label">Stock Quantity</label>
+                                            <input type="number" id="stock-quantity" name="stock-quantity" class="form-input" 
+                                                   min="0" placeholder="0">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="reorder-level" class="form-label">Reorder Level</label>
+                                            <input type="number" id="reorder-level" name="reorder-level" class="form-input" 
+                                                   min="0" placeholder="0">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="supplier" class="form-label">Supplier</label>
+                                        <select id="supplier" name="supplier" class="form-select">
+                                            <option value="">Select Supplier</option>
+                                            <option value="supplier-a">Supplier A</option>
+                                            <option value="supplier-b">Supplier B</option>
+                                            <option value="supplier-c">Supplier C</option>
+                                            <option value="supplier-d">Supplier D</option>
+                                        </select>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Media Fieldset -->
+                                <fieldset class="form-fieldset">
+                                    <legend class="fieldset-legend">Media & Status</legend>
+                                    
+                                    <div class="form-group">
+                                        <label for="product-image" class="form-label">Product Image</label>
+                                        <input type="file" id="product-image" name="product-image" class="form-file" 
+                                               accept="image/*">
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="featured-product" class="checkbox-input">
+                                                <span class="checkbox-custom"></span>
+                                                Featured Product
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <fieldset class="radio-group">
+                                                <legend class="radio-legend">Active Status</legend>
+                                                <div class="radio-options">
+                                                    <label class="radio-label">
+                                                        <input type="radio" name="active-status" value="active" class="radio-input" checked>
+                                                        <span class="radio-custom"></span>
+                                                        Active
+                                                    </label>
+                                                    <label class="radio-label">
+                                                        <input type="radio" name="active-status" value="inactive" class="radio-input">
+                                                        <span class="radio-custom"></span>
+                                                        Inactive
+                                                    </label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <!-- Form Actions -->
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary">Save Product</button>
+                                    <button type="submit" class="btn btn-secondary">Save & Continue</button>
+                                    <button type="button" class="btn btn-outline">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Floating Action Button -->
+    <button class="fab" aria-label="Quick add">
+        <span class="fab-icon" aria-hidden="true">+</span>
+    </button>
+</body>
+</html>
+
