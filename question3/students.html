@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Management Dashboard for Computer Science Students - Batch 2024">
+    <meta name="keywords" content="student management, computer science, education, dashboard">
+    <meta name="author" content="University Administration">
+    <title>Student Management Dashboard - Computer Science Batch 2024</title>
+</head>
+<body>
+    <header>
+        <h1>Student Management Dashboard</h1>
+        <nav aria-label="Dashboard Navigation">
+            <ul>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="students">
+            <h2>Computer Science Students - Batch 2024</h2>
+            
+            <table border="1" role="table" aria-label="Student Information Table">
+                <caption>Computer Science Students - Batch 2024</caption>
+                
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">Student ID</th>
+                        <th scope="col" rowspan="2">Student Name</th>
+                        <th scope="colgroup" colspan="2">Course Details</th>
+                        <th scope="colgroup" colspan="2">Contact Information</th>
+                        <th scope="col" rowspan="2">Semester</th>
+                        <th scope="col" rowspan="2">GPA</th>
+                        <th scope="col" rowspan="2">Status</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Course Name</th>
+                        <th scope="col">Credits</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>CS001</td>
+                        <td>Shaurya Salona</td>
+                        <td>Web Development</td>
+                        <td>3</td>
+                        <td>shaurya.salona@university.edu</td>
+                        <td>+91-9876543210</td>
+                        <td>5</td>
+                        <td>3.8</td>
+                        <td>Active</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2">CS002</td>
+                        <td rowspan="2">Ananya Patel</td>
+                        <td>Data Science</td>
+                        <td>4</td>
+                        <td rowspan="2">ananya.patel@university.edu</td>
+                        <td rowspan="2">+91-9876543211</td>
+                        <td rowspan="2">6</td>
+                        <td rowspan="2">3.6</td>
+                        <td rowspan="2">Active</td>
+                    </tr>
+                    <tr>
+                        <td>Machine Learning</td>
+                        <td>4</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>CS003</td>
+                        <td>Rohit Kumar</td>
+                        <td>DevOps Engineering</td>
+                        <td>3</td>
+                        <td>rohit.kumar@university.edu</td>
+                        <td>+91-9876543212</td>
+                        <td>4</td>
+                        <td>3.4</td>
+                        <td>Inactive</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2">CS004</td>
+                        <td rowspan="2">Priya Sharma</td>
+                        <td>Mobile App Development</td>
+                        <td>3</td>
+                        <td rowspan="2">priya.sharma@university.edu</td>
+                        <td rowspan="2">+91-9876543213</td>
+                        <td rowspan="2">5</td>
+                        <td rowspan="2">3.9</td>
+                        <td rowspan="2">Active</td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX Design</td>
+                        <td>2</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>CS005</td>
+                        <td>Arjun Singh</td>
+                        <td>Cybersecurity</td>
+                        <td>4</td>
+                        <td>arjun.singh@university.edu</td>
+                        <td>+91-9876543214</td>
+                        <td>6</td>
+                        <td>3.2</td>
+                        <td>Active</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>CS006</td>
+                        <td>Kavya Reddy</td>
+                        <td>Cloud Computing</td>
+                        <td>3</td>
+                        <td>kavya.reddy@university.edu</td>
+                        <td>+91-9876543215</td>
+                        <td>4</td>
+                        <td>3.7</td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+                
+                <tfoot>
+                    <tr>
+                        <td colspan="9">
+                            <strong>Summary Statistics:</strong>
+                            Total Students: 6 | Average GPA: 3.6 | Active Students: 5 | Inactive Students: 1
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="summary">
+            <h2>Academic Summary</h2>
+            <article>
+                <h3>Student Performance Overview</h3>
+                <ul>
+                    <li><strong>Total Enrolled Students:</strong> 6</li>
+                    <li><strong>Active Students:</strong> 5 (83.3%)</li>
+                    <li><strong>Inactive Students:</strong> 1 (16.7%)</li>
+                    <li><strong>Average GPA:</strong> 3.6</li>
+                    <li><strong>Highest GPA:</strong> 3.9 (Priya Sharma)</li>
+                    <li><strong>Lowest GPA:</strong> 3.2 (Arjun Singh)</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Course Distribution</h3>
+                <ul>
+                    <li><strong>Web Development:</strong> 1 student</li>
+                    <li><strong>Data Science:</strong> 1 student</li>
+                    <li><strong>Machine Learning:</strong> 1 student</li>
+                    <li><strong>DevOps Engineering:</strong> 1 student</li>
+                    <li><strong>Mobile App Development:</strong> 1 student</li>
+                    <li><strong>UI/UX Design:</strong> 1 student</li>
+                    <li><strong>Cybersecurity:</strong> 1 student</li>
+                    <li><strong>Cloud Computing:</strong> 1 student</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Semester Distribution</h3>
+                <ul>
+                    <li><strong>Semester 4:</strong> 2 students</li>
+                    <li><strong>Semester 5:</strong> 2 students</li>
+                    <li><strong>Semester 6:</strong> 2 students</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="actions">
+            <h2>Quick Actions</h2>
+            <nav aria-label="Student Management Actions">
+                <ul>
+                    <li><a href="#add-student">Add New Student</a></li>
+                    <li><a href="#edit-student">Edit Student Information</a></li>
+                    <li><a href="#export-data">Export Student Data</a></li>
+                    <li><a href="#generate-report">Generate Academic Report</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Important Notices</h2>
+        <ul>
+            <li>Mid-term examinations scheduled for next week</li>
+            <li>Project submission deadline: March 15, 2025</li>
+            <li>Career counseling sessions available</li>
+            <li>Scholarship applications open until March 30, 2025</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 University Computer Science Department. All rights reserved.</p>
+        <p>For technical support, contact: <a href="mailto:admin@university.edu">admin@university.edu</a></p>
+        <p>Last updated: <time datetime="2025-01-27">January 27, 2025</time></p>
+    </footer>
+</body>
+</html>

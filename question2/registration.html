@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Course Registration Form for Online Learning Platform">
+    <meta name="keywords" content="course registration, online learning, education, programming courses">
+    <meta name="author" content="Online Learning Platform">
+    <title>Course Registration Form - Online Learning Platform</title>
+</head>
+<body>
+    <header>
+        <h1>Course Registration Form</h1>
+        <p>Join our comprehensive programming courses and advance your career in technology.</p>
+    </header>
+
+    <main>
+        <form action="/submit-registration" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div>
+                    <label for="name">Full Name: <span aria-label="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name" aria-describedby="name-help">
+                    <small id="name-help">Please enter your first and last name</small>
+                </div>
+
+                <div>
+                    <label for="email">Email Address: <span aria-label="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com" aria-describedby="email-help">
+                    <small id="email-help">We'll use this to send course updates and materials</small>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1-234-567-8900" pattern="[0-9+\-\s\(\)]+" aria-describedby="phone-help">
+                    <small id="phone-help">Include country code for international numbers</small>
+                </div>
+
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" min="1950-01-01" max="2010-12-31" aria-describedby="dob-help">
+                    <small id="dob-help">Must be at least 14 years old to register</small>
+                </div>
+
+                <div>
+                    <label for="profile">Profile Picture:</label>
+                    <input type="file" id="profile" name="profile" accept="image/*" aria-describedby="profile-help">
+                    <small id="profile-help">Upload a professional photo (JPG, PNG, GIF - Max 5MB)</small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Background</legend>
+                
+                <div>
+                    <label for="education">Current Education Level:</label>
+                    <select id="education" name="education" required aria-describedby="education-help">
+                        <option value="">Select your education level</option>
+                        <option value="high-school">High School</option>
+                        <option value="bachelors">Bachelor's Degree</option>
+                        <option value="masters">Master's Degree</option>
+                        <option value="phd">PhD</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <small id="education-help">This helps us recommend appropriate courses</small>
+                </div>
+
+                <div>
+                    <label for="field">Field of Study:</label>
+                    <input type="text" id="field" name="field" placeholder="e.g., Computer Science, Engineering, Business" aria-describedby="field-help">
+                    <small id="field-help">Your current or previous field of study</small>
+                </div>
+
+                <div>
+                    <label for="experience">Years of Experience in Programming:</label>
+                    <input type="number" id="experience" name="experience" min="0" max="20" placeholder="0" aria-describedby="experience-help">
+                    <small id="experience-help">Include any programming experience, even if informal</small>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Preferences</legend>
+                
+                <div>
+                    <fieldset>
+                        <legend>Preferred Learning Mode: <span aria-label="required">*</span></legend>
+                        <input type="radio" id="mode-online" name="mode" value="online" required>
+                        <label for="mode-online">Online - Learn from anywhere with live sessions</label><br>
+                        
+                        <input type="radio" id="mode-offline" name="mode" value="offline">
+                        <label for="mode-offline">Offline - In-person classroom sessions</label><br>
+                        
+                        <input type="radio" id="mode-hybrid" name="mode" value="hybrid">
+                        <label for="mode-hybrid">Hybrid - Mix of online and offline sessions</label>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Course Categories (Select all that interest you):</legend>
+                        <input type="checkbox" id="category-web" name="category" value="web">
+                        <label for="category-web">Web Development - HTML, CSS, JavaScript, React</label><br>
+                        
+                        <input type="checkbox" id="category-mobile" name="category" value="mobile">
+                        <label for="category-mobile">Mobile App Development - React Native, Flutter</label><br>
+                        
+                        <input type="checkbox" id="category-data" name="category" value="data">
+                        <label for="category-data">Data Science - Python, R, Machine Learning</label><br>
+                        
+                        <input type="checkbox" id="category-ai" name="category" value="ai">
+                        <label for="category-ai">AI/ML - Artificial Intelligence, Deep Learning</label><br>
+                        
+                        <input type="checkbox" id="category-devops" name="category" value="devops">
+                        <label for="category-devops">DevOps - Docker, Kubernetes, CI/CD</label>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Preferred Schedule:</legend>
+                        <input type="radio" id="schedule-weekdays" name="schedule" value="weekdays">
+                        <label for="schedule-weekdays">Weekdays - Monday to Friday</label><br>
+                        
+                        <input type="radio" id="schedule-weekends" name="schedule" value="weekends">
+                        <label for="schedule-weekends">Weekends - Saturday and Sunday</label><br>
+                        
+                        <input type="radio" id="schedule-flexible" name="schedule" value="flexible">
+                        <label for="schedule-flexible">Flexible - Any time that works for me</label>
+                    </fieldset>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <div>
+                    <label for="level">Programming Experience Level (1-10):</label>
+                    <input type="range" id="level" name="level" min="1" max="10" value="5" aria-describedby="level-help">
+                    <output for="level" id="level-output">5</output>
+                    <small id="level-help">1 = Complete beginner, 10 = Expert programmer</small>
+                </div>
+
+                <div>
+                    <label for="comments">Special Requirements or Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any special accommodations, learning preferences, or additional information you'd like to share..." aria-describedby="comments-help"></textarea>
+                    <small id="comments-help">Let us know if you have any specific needs or preferences</small>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Preferred Contact Method: <span aria-label="required">*</span></legend>
+                        <input type="radio" id="contact-email" name="contact_method" value="email" required>
+                        <label for="contact-email">Email - Send updates and notifications via email</label><br>
+                        
+                        <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                        <label for="contact-phone">Phone - Call for important updates</label><br>
+                        
+                        <input type="radio" id="contact-sms" name="contact_method" value="sms">
+                        <label for="contact-sms">SMS - Text messages for quick updates</label>
+                    </fieldset>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Terms and Conditions</legend>
+                
+                <div>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I agree to the <a href="/terms" target="_blank">Terms and Conditions</a> <span aria-label="required">*</span></label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">I want to receive newsletters and course updates via email</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="marketing" name="marketing">
+                    <label for="marketing">I consent to receive marketing communications about new courses and offers</label>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit" id="submit-btn">Submit Registration</button>
+                <button type="reset" id="reset-btn">Reset Form</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Online Learning Platform. All rights reserved.</p>
+        <p>Need help? Contact us at <a href="mailto:support@learningplatform.com">support@learningplatform.com</a></p>
+    </footer>
+
+    <script>
+        // Simple JavaScript for range slider output
+        const levelSlider = document.getElementById('level');
+        const levelOutput = document.getElementById('level-output');
+        
+        levelSlider.addEventListener('input', function() {
+            levelOutput.textContent = this.value;
+        });
+
+        // Form validation enhancement
+        const form = document.querySelector('form');
+        const submitBtn = document.getElementById('submit-btn');
+        
+        form.addEventListener('submit', function(e) {
+            const requiredFields = form.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = 'red';
+                } else {
+                    field.style.borderColor = '';
+                }
+            });
+            
+            if (!isValid) {
+                e.preventDefault();
+                alert('Please fill in all required fields.');
+            }
+        });
+    </script>
+</body>
+</html>
